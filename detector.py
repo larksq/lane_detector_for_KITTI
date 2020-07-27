@@ -1,7 +1,6 @@
 import cv2
 import numpy as np
 from scipy import signal
-from scipy import interpolate
 from sklearn.linear_model import LinearRegression
 import cubic
 from sklearn.preprocessing import MinMaxScaler
@@ -14,7 +13,7 @@ import os, shutil
 DEFAULT_LINE_LIST = ['CD']
 DEFAULT_LINE_INFO = [[(770, 170), 150, 50, 0]]
 
-class line_detector:
+class LineDetector:
 
     # the list of current lines information at the starting point
     # C = Curb, S = Solid (white) line, D = Dashed (white) line
@@ -37,7 +36,7 @@ class line_detector:
                  lane_width = 33,
                  initial_angle = 0,
                  current_image_name = 'um_000000',
-                 current_image_path= "../../../KITTI/data_road/transformed/",
+                 current_image_path= "../../../../KITTI/data_road/transformed/",
                  vis_folder_prefix = 'visualization/',
                  step_window= False,
                  visualization = False
@@ -59,7 +58,9 @@ class line_detector:
         self.step_window= step_window
         self.visualization = visualization
 
-    def rotate(self, origin, point, angle):
+
+    @staticmethod
+    def rotate(origin, point, angle):
         """
         Rotate a point counterclockwise by a given angle around a given origin.
 
@@ -77,7 +78,9 @@ class line_detector:
         qy = oy + math.sin(angle) * (px - ox) + math.cos(angle) * (py - oy)
         return qx, qy
 
-    def prepare_visualization_folder(self, vis_folder):
+
+    @staticmethod
+    def prepare_visualization_folder(vis_folder):
         # clear visualization folder
         for filename in os.listdir(vis_folder):
             file_path = os.path.join(vis_folder, filename)
@@ -91,6 +94,7 @@ class line_detector:
 
 
     def detect_and_save(self):
+
         vis_folder = self.vis_folder_prefix+str(self.current_image_name)
         self.prepare_visualization_folder(vis_folder=vis_folder)
         img = cv2.imread(self.current_image_path+str(self.current_image_name)+".png")
@@ -237,10 +241,6 @@ class line_detector:
                                 x, y = pos
                                 pos_list.append(pos)
                                 zero_img[x, y] = img_np[x, y]
-
-                        # # open the line to make them slim
-                        # kernel = np.ones((20,1),np.uint8)
-                        # zero_img = cv2.morphologyEx(zero_img, cv2.MORPH_OPEN, kernel,iterations = 3)
 
                         x_list, y_list = np.where(zero_img > self.min_over_hough)
                         if len(x_list) > 0:
@@ -573,5 +573,5 @@ class line_detector:
 
 if __name__ == "__main__":
 
-    detector = line_detector(visualization=True)
+    detector = LineDetector(visualization=True)
     detector.detect_and_save()
