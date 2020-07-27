@@ -1,0 +1,555 @@
+# 94
+# MIN_OVER_HOUGH = 50
+# MIN_LENGTH = 40
+# MAX_LENGTH = 300
+# IMAGE_DIMENSION = (800, 400)
+# DASH_INTERVAL_PXL = 208 # the interval + one line length, 0-300 is legal value for window_h=200
+# LINE_LIST = ['SD', 'SS']
+# LINE_INFO = [[(800, 175), 200, 50, 0],
+#              [(800, 232), 800, 25, 0]]
+# LANE_WIDTH = 0 # used for solid line mode
+# INITIAL_ANGLE = 0
+
+# #93
+# MIN_OVER_HOUGH = 50
+# MIN_LENGTH = 30
+# MAX_LENGTH = 90
+# IMAGE_DIMENSION = (800, 400)
+# DASH_INTERVAL_PXL = 140 # the interval + one line length, 0-300 is legal value for window_h=200
+# LINE_LIST = ['SD']
+# LINE_INFO = [[(800, 170), 150, 50, 0]]
+# LANE_WIDTH = 60 # used for solid line mode
+# INITIAL_ANGLE = 0
+
+#92
+# MIN_OVER_HOUGH = 50
+# MIN_LENGTH = 30
+# MAX_LENGTH = 90
+# IMAGE_DIMENSION = (800, 400)
+# DASH_INTERVAL_PXL = 140 # the interval + one line length, 0-300 is legal value for window_h=200
+# LINE_LIST = ['SD']
+# LINE_INFO = [[(800, 170), 150, 50, 0]]
+# LANE_WIDTH = 60 # used for solid line mode
+# INITIAL_ANGLE = -0.088
+
+#91
+# MIN_OVER_HOUGH = 50
+# MIN_LENGTH = 80
+# MAX_LENGTH = 1000
+# IMAGE_DIMENSION = (800, 400)
+# DASH_INTERVAL_PXL = 140 # the interval + one line length, 0-300 is legal value for window_h=200
+# LINE_LIST = ['CS']
+# LINE_INFO = [[(770, 180), 150, 50, 0]]
+# LANE_WIDTH = 60 # used for solid line mode
+# INITIAL_ANGLE = -0.14
+
+# 90
+# MIN_OVER_HOUGH = 50
+# MIN_LENGTH = 40
+# MAX_LENGTH = 1000
+# IMAGE_DIMENSION = (800, 400)
+# DASH_INTERVAL_PXL = 140 # the interval + one line length, 0-300 is legal value for window_h=200
+# LINE_LIST = ['CS']
+# LINE_INFO = [[(770, 180), 150, 50, 0]]
+# LANE_WIDTH = 60 # used for solid line mode
+# INITIAL_ANGLE = 0
+
+# 89
+# MIN_OVER_HOUGH = 50
+# MIN_LENGTH = 40
+# MAX_LENGTH = 1000
+# IMAGE_DIMENSION = (800, 400)
+# DASH_INTERVAL_PXL = 120 # the interval + one line length, 0-300 is legal value for window_h=200
+# LINE_LIST = ['CD']
+# LINE_INFO = [[(770, 180), 150, 50, 0]]
+# LANE_WIDTH = 60 # used for solid line mode
+# INITIAL_ANGLE = 0
+
+# 88
+# MIN_OVER_HOUGH = 50
+# MIN_LENGTH = 40
+# MAX_LENGTH = 1000
+# IMAGE_DIMENSION = (800, 400)
+# DASH_INTERVAL_PXL = 120 # the interval + one line length, 0-300 is legal value for window_h=200
+# LINE_LIST = ['CD']
+# LINE_INFO = [[(770, 180), 150, 50, 0]]
+# LANE_WIDTH = 60 # used for solid line mode
+# INITIAL_ANGLE = 0
+
+# 87
+# MIN_OVER_HOUGH = 40
+# MIN_LENGTH = 30
+# MAX_LENGTH = 70
+# IMAGE_DIMENSION = (800, 400)
+# DASH_INTERVAL_PXL = 120 # the interval + one line length, 0-300 is legal value for window_h=200
+# LINE_LIST = ['CD']
+# LINE_INFO = [[(770, 180), 150, 50, 0]]
+# LANE_WIDTH = 46 # used for solid line mode
+# INITIAL_ANGLE = 0.14
+
+# 86
+# MIN_OVER_HOUGH = 50
+# MIN_LENGTH = 40
+# MAX_LENGTH = 1000
+# IMAGE_DIMENSION = (800, 400)
+# DASH_INTERVAL_PXL = 125 # the interval + one line length, 0-300 is legal value for window_h=200
+# LINE_LIST = ['CD']
+# LINE_INFO = [[(770, 170), 150, 50, 0]]
+# LANE_WIDTH = 60 # used for solid line mode
+# INITIAL_ANGLE = 0.0523
+
+# 85, 84
+# MIN_OVER_HOUGH = 50
+# MIN_LENGTH = 30
+# MAX_LENGTH = 100
+# IMAGE_DIMENSION = (800, 400)
+# DASH_INTERVAL_PXL = 120 # the interval + one line length, 0-300 is legal value for window_h=200
+# LINE_LIST = ['CD']
+# LINE_INFO = [[(770, 172), 150, 50, 0]]
+# LANE_WIDTH = 45 # used for solid line mode
+# INITIAL_ANGLE = 0
+
+# 83,82
+# MIN_OVER_HOUGH = 50
+# MIN_LENGTH = 20
+# MAX_LENGTH = 80
+# IMAGE_DIMENSION = (800, 400)
+# DASH_INTERVAL_PXL = 90 # the interval + one line length, 0-300 is legal value for window_h=200
+# LINE_LIST = ['CD']
+# LINE_INFO = [[(770, 172), 150, 50, 0]]
+# LANE_WIDTH = 45 # used for solid line mode
+# INITIAL_ANGLE = 0
+
+# 81
+# MIN_OVER_HOUGH = 50
+# MIN_LENGTH = 80/3
+# MAX_LENGTH = 80/3*5
+# IMAGE_DIMENSION = (800, 400)
+# DASH_INTERVAL_PXL = 135 # the interval + one line length, 0-300 is legal value for window_h=200
+# LINE_LIST = ['CD']
+# LINE_INFO = [[(770, 172), 150, 50, 0]]
+# LANE_WIDTH = 50 # used for solid line mode
+# INITIAL_ANGLE = 0
+
+# 80
+# MIN_OVER_HOUGH = 50
+# MIN_LENGTH = 67/3
+# MAX_LENGTH = 67/3*5
+# IMAGE_DIMENSION = (800, 400)
+# DASH_INTERVAL_PXL = 140 # the interval + one line length, 0-300 is legal value for window_h=200
+# LINE_LIST = ['CD']
+# LINE_INFO = [[(770, 172), 150, 50, 0]]
+# LANE_WIDTH = 55 # used for solid line mode
+# INITIAL_ANGLE = 0
+
+# 79, 78, 77, 76
+# MIN_OVER_HOUGH = 50
+# MIN_LENGTH = 63/3
+# MAX_LENGTH = 63/3*5
+# IMAGE_DIMENSION = (800, 400)
+# DASH_INTERVAL_PXL = 125 # the interval + one line length, 0-300 is legal value for window_h=200
+# LINE_LIST = ['CD']
+# LINE_INFO = [[(770, 172), 150, 50, 0]]
+# LANE_WIDTH = 55 # used for solid line mode
+# INITIAL_ANGLE = 0
+
+# 75
+# MIN_OVER_HOUGH = 50
+# MIN_LENGTH = 71/3
+# MAX_LENGTH = 71/3*5
+# IMAGE_DIMENSION = (800, 400)
+# DASH_INTERVAL_PXL = 166 # the interval + one line length, 0-300 is legal value for window_h=200
+# LINE_LIST = ['CD']
+# LINE_INFO = [[(770, 172), 150, 50, 0]]
+# LANE_WIDTH = 50 # used for solid line mode
+# INITIAL_ANGLE = 0.12217304763960307
+
+#73
+# MIN_OVER_HOUGH = 50
+# MIN_LENGTH = 30/3
+# MAX_LENGTH = 30/3*5
+# IMAGE_DIMENSION = (800, 400)
+# DASH_INTERVAL_PXL = 60 # the interval + one line length, 0-300 is legal value for window_h=200
+# LINE_LIST = ['CD']
+# LINE_INFO = [[(770, 163), 80, 40, 0]]
+# LANE_WIDTH = 50 # used for solid line mode
+# INITIAL_ANGLE = -0.19198621771937624
+
+#72
+# MIN_OVER_HOUGH = 50
+# MIN_LENGTH = 19/3
+# MAX_LENGTH = 100000#19/3*5
+# IMAGE_DIMENSION = (800, 400)
+# DASH_INTERVAL_PXL = 37 # the interval + one line length, 0-300 is legal value for window_h=200
+# LINE_LIST = ['SD']
+# LINE_INFO = [[(770, 130), 35, 30, 0]]
+# LANE_WIDTH = 50 # used for solid line mode
+# INITIAL_ANGLE = 0.19198621771937624
+
+#71
+# MIN_OVER_HOUGH = 50
+# MIN_LENGTH = 49/3
+# MAX_LENGTH = 49/3*5
+# IMAGE_DIMENSION = (800, 400)
+# DASH_INTERVAL_PXL = 96 # the interval + one line length, 0-300 is legal value for window_h=200
+# LINE_LIST = ['SD']
+# LINE_INFO = [[(770, 170), 100, 50, 0]]
+# LANE_WIDTH = 50 # used for solid line mode
+# INITIAL_ANGLE = 0
+
+#70
+# MIN_OVER_HOUGH = 50
+# MIN_LENGTH = 49/3
+# MAX_LENGTH = 49/3*5
+# IMAGE_DIMENSION = (800, 400)
+# DASH_INTERVAL_PXL = 87 # the interval + one line length, 0-300 is legal value for window_h=200
+# LINE_LIST = ['SD']
+# LINE_INFO = [[(770, 170), 100, 50, 0]]
+# LANE_WIDTH = 45 # used for solid line mode
+# INITIAL_ANGLE = 0
+
+#69
+# MIN_OVER_HOUGH = 50
+# MIN_LENGTH = 49/3
+# MAX_LENGTH = 100000
+# IMAGE_DIMENSION = (800, 400)
+# DASH_INTERVAL_PXL = 87 # the interval + one line length, 0-300 is legal value for window_h=200
+# LINE_LIST = ['SS']
+# LINE_INFO = [[(770, 170), 100, 50, 0]]
+# LANE_WIDTH = 45 # used for solid line mode
+# INITIAL_ANGLE = 0
+
+#68, 67, 66, 65
+# MIN_OVER_HOUGH = 50
+# MIN_LENGTH = 57/3
+# MAX_LENGTH = 57/3*5
+# IMAGE_DIMENSION = (800, 400)
+# DASH_INTERVAL_PXL = 109 # the interval + one line length, 0-300 is legal value for window_h=200
+# LINE_LIST = ['SD']
+# LINE_INFO = [[(770, 170), 130, 50, 0]]
+# LANE_WIDTH = 45 # used for solid line mode
+# INITIAL_ANGLE = 0
+
+#64
+# MIN_OVER_HOUGH = 50
+# MIN_LENGTH = 78/3
+# MAX_LENGTH = 78/3*5
+# IMAGE_DIMENSION = (800, 400)
+# DASH_INTERVAL_PXL = 115 # the interval + one line length, 0-300 is legal value for window_h=200
+# LINE_LIST = ['SD']
+# LINE_INFO = [[(770, 170), 150, 50, 0]]
+# LANE_WIDTH = 62 # used for solid line mode
+# INITIAL_ANGLE = 0.10471975511965977
+
+#63, 62
+# MIN_OVER_HOUGH = 50
+# MIN_LENGTH = 73/3
+# MAX_LENGTH = 73*1.2
+# IMAGE_DIMENSION = (800, 400)
+# DASH_INTERVAL_PXL = 95 # the interval + one line length, 0-300 is legal value for window_h=200
+# LINE_LIST = ['SD']
+# LINE_INFO = [[(770, 170), 130, 50, 0]]
+# LANE_WIDTH = 62 # used for solid line mode
+# INITIAL_ANGLE = 0
+
+#61
+# MIN_OVER_HOUGH = 50
+# MIN_LENGTH = 40
+# MAX_LENGTH = 1000000
+# IMAGE_DIMENSION = (800, 400)
+# DASH_INTERVAL_PXL = 95 # the interval + one line length, 0-300 is legal value for window_h=200
+# LINE_LIST = ['SS']
+# LINE_INFO = [[(770, 180), 130, 25, 0]]
+# LANE_WIDTH = 62 # used for solid line mode
+# INITIAL_ANGLE = 0.05235987755982988
+
+#60
+# MIN_OVER_HOUGH = 50
+# MIN_LENGTH = 52/3
+# MAX_LENGTH = 52*1.2
+# IMAGE_DIMENSION = (800, 400)
+# DASH_INTERVAL_PXL = 105 # the interval + one line length, 0-300 is legal value for window_h=200
+# LINE_LIST = ['SD']
+# LINE_INFO = [[(770, 163), 140, 50, 0]]
+# LANE_WIDTH = 60 # used for solid line mode
+# INITIAL_ANGLE = 0
+
+#59, 58, 57, 56, 55, 54, 53
+# MIN_OVER_HOUGH = 50
+# MIN_LENGTH = 77/3
+# MAX_LENGTH = 77*1.2
+# IMAGE_DIMENSION = (800, 400)
+# DASH_INTERVAL_PXL = 107 # the interval + one line length, 0-300 is legal value for window_h=200
+# LINE_LIST = ['SD']
+# LINE_INFO = [[(770, 163), 140, 50, 0]]
+# LANE_WIDTH = 60 # used for solid line mode
+# INITIAL_ANGLE = 0
+
+# 52
+# MIN_OVER_HOUGH = 100
+# MIN_LENGTH = 68/3
+# MAX_LENGTH = 98*1.2
+# IMAGE_DIMENSION = (800, 400)
+# DASH_INTERVAL_PXL = 121 # the interval + one line length, 0-300 is legal value for window_h=200
+# LINE_LIST = ['SD']
+# LINE_INFO = [[(770, 161), 150, 50, 0]]
+# LANE_WIDTH = 60 # used for solid line mode
+# INITIAL_ANGLE = 0
+
+# 51, 50, 49, 48
+# MIN_OVER_HOUGH = 100
+# MIN_LENGTH = 117/3
+# MAX_LENGTH = 117*1.2
+# IMAGE_DIMENSION = (800, 400)
+# DASH_INTERVAL_PXL = 150 # the interval + one line length, 0-300 is legal value for window_h=200
+# LINE_LIST = ['CD']
+# LINE_INFO = [[(770, 160), 200, 50, 0]]
+# LANE_WIDTH = 65 # used for solid line mode
+# INITIAL_ANGLE = 0
+
+# 47
+# MIN_OVER_HOUGH = 50
+# MIN_LENGTH = 101/3
+# MAX_LENGTH = 100000
+# IMAGE_DIMENSION = (800, 400)
+# DASH_INTERVAL_PXL = 158 # the interval + one line length, 0-300 is legal value for window_h=200
+# LINE_LIST = ['CD']
+# LINE_INFO = [[(770, 166), 170, 50, 0]]
+# LANE_WIDTH = 65 # used for solid line mode
+# INITIAL_ANGLE = 0
+
+# 46, 45, 44, 43, 42, 41, 40, 39, 37, 36, 35, 33
+# MIN_OVER_HOUGH = 50
+# MIN_LENGTH = 125/3
+# MAX_LENGTH = 125/3*4
+# IMAGE_DIMENSION = (800, 400)
+# DASH_INTERVAL_PXL = 169 # the interval + one line length, 0-300 is legal value for window_h=200
+# LINE_LIST = ['CD']
+# LINE_INFO = [[(770, 166), 200, 50, 0]]
+# LANE_WIDTH = 65 # used for solid line mode
+# INITIAL_ANGLE = 0
+
+# 38, 34
+# MIN_OVER_HOUGH = 50
+# MIN_LENGTH = 125/3
+# MAX_LENGTH = 1000000
+# IMAGE_DIMENSION = (800, 400)
+# DASH_INTERVAL_PXL = 169 # the interval + one line length, 0-300 is legal value for window_h=200
+# LINE_LIST = ['CD']
+# LINE_INFO = [[(770, 166), 200, 50, 0]]
+# LANE_WIDTH = 65 # used for solid line mode
+# INITIAL_ANGLE = 0
+
+# 32
+# MIN_OVER_HOUGH = 50
+# MIN_LENGTH = 28/3
+# MAX_LENGTH = 10000000
+# IMAGE_DIMENSION = (800, 400)
+# DASH_INTERVAL_PXL = 120 # the interval + one line length, 0-300 is legal value for window_h=200
+# LINE_LIST = ['CD', 'CS']
+# LINE_INFO = [[(770, 166), 150, 50, 0],
+#              [(770, 225), 150, 50, 0]]
+# LANE_WIDTH = 65 # used for solid line mode
+# INITIAL_ANGLE = 0
+
+# 31, 30
+# MIN_OVER_HOUGH = 50
+# MIN_LENGTH = 70/3
+# MAX_LENGTH = 10000000
+# IMAGE_DIMENSION = (800, 400)
+# DASH_INTERVAL_PXL = 120 # the interval + one line length, 0-300 is legal value for window_h=200
+# LINE_LIST = ['CD', 'CS']
+# LINE_INFO = [[(770, 160), 150, 50, 0],
+#              [(770, 228), 150, 25, 0]]
+# LANE_WIDTH = 65 # used for solid line mode
+# INITIAL_ANGLE = 0
+
+# 29
+# MIN_OVER_HOUGH = 50
+# MIN_LENGTH = 70/3
+# MAX_LENGTH = 10000000
+# IMAGE_DIMENSION = (800, 400)
+# DASH_INTERVAL_PXL = 120 # the interval + one line length, 0-300 is legal value for window_h=200
+# LINE_LIST = ['CD', 'CS']
+# LINE_INFO = [[(770, 165), 150, 50, 0],
+#              [(770, 230), 150, 25, 0]]
+# LANE_WIDTH = 65 # used for solid line mode
+# INITIAL_ANGLE = 0
+
+# 27
+# MIN_OVER_HOUGH = 50
+# MIN_LENGTH = 30
+# MAX_LENGTH = 10000000
+# IMAGE_DIMENSION = (800, 400)
+# DASH_INTERVAL_PXL = 120 # the interval + one line length, 0-300 is legal value for window_h=200
+# LINE_LIST = ['CD']
+# LINE_INFO = [[(770, 165), 150, 30, 0]]
+# LANE_WIDTH = 65 # used for solid line mode
+# INITIAL_ANGLE = 0
+
+# 27
+# MIN_OVER_HOUGH = 50
+# MIN_LENGTH = 30
+# MAX_LENGTH = 10000000
+# IMAGE_DIMENSION = (800, 400)
+# DASH_INTERVAL_PXL = 120 # the interval + one line length, 0-300 is legal value for window_h=200
+# LINE_LIST = ['CD']
+# LINE_INFO = [[(770, 170), 150, 30, 0]]
+# LANE_WIDTH = 65 # used for solid line mode
+# INITIAL_ANGLE = 0
+
+# 26
+# MIN_OVER_HOUGH = 50
+# MIN_LENGTH = 30
+# MAX_LENGTH = 10000000
+# IMAGE_DIMENSION = (800, 400)
+# DASH_INTERVAL_PXL = 120 # the interval + one line length, 0-300 is legal value for window_h=200
+# LINE_LIST = ['CD']
+# LINE_INFO = [[(770, 170), 150, 30, 0]]
+# LANE_WIDTH = 60 # used for solid line mode
+# INITIAL_ANGLE = 0
+
+# 25
+# MIN_OVER_HOUGH = 50
+# MIN_LENGTH = 44/3
+# MAX_LENGTH = 10000000
+# IMAGE_DIMENSION = (800, 400)
+# DASH_INTERVAL_PXL = 120 # the interval + one line length, 0-300 is legal value for window_h=200
+# LINE_LIST = ['CD']
+# LINE_INFO = [[(770, 170), 150, 50, 0]]
+# LANE_WIDTH = 60 # used for solid line mode
+# INITIAL_ANGLE = -0.08726646259971647
+
+# 24, 23, 22, 21
+# MIN_OVER_HOUGH = 50
+# MIN_LENGTH = 56/3
+# MAX_LENGTH = 56*1.2
+# IMAGE_DIMENSION = (800, 400)
+# DASH_INTERVAL_PXL = 92 # the interval + one line length, 0-300 is legal value for window_h=200
+# LINE_LIST = ['CD']
+# LINE_INFO = [[(770, 170), 150, 50, 0]]
+# LANE_WIDTH = 60 # used for solid line mode
+# INITIAL_ANGLE = -0.06981317007977318
+
+# 20
+# MIN_OVER_HOUGH = 50
+# MIN_LENGTH = 56/3
+# MAX_LENGTH = 1000000
+# IMAGE_DIMENSION = (800, 400)
+# DASH_INTERVAL_PXL = 92 # the interval + one line length, 0-300 is legal value for window_h=200
+# LINE_LIST = ['CD']
+# LINE_INFO = [[(770, 170), 150, 50, 0]]
+# LANE_WIDTH = 42 # used for solid line mode
+# INITIAL_ANGLE = 0
+
+# 19
+# MIN_OVER_HOUGH = 50
+# MIN_LENGTH = 52/3
+# MAX_LENGTH = 1000000
+# IMAGE_DIMENSION = (800, 400)
+# DASH_INTERVAL_PXL = 92 # the interval + one line length, 0-300 is legal value for window_h=200
+# LINE_LIST = ['CD']
+# LINE_INFO = [[(770, 170), 150, 30, 0]]
+# LANE_WIDTH = 38 # used for solid line mode
+# INITIAL_ANGLE = 0
+
+# 18, 17, 16, 15, 14, 13
+# MIN_OVER_HOUGH = 50
+# MIN_LENGTH = 63/3
+# MAX_LENGTH = 63*1.2
+# IMAGE_DIMENSION = (800, 400)
+# DASH_INTERVAL_PXL = 119 # the interval + one line length, 0-300 is legal value for window_h=200
+# LINE_LIST = ['CD']
+# LINE_INFO = [[(770, 170), 150, 50, 0]]
+# LANE_WIDTH = 63 # used for solid line mode
+# INITIAL_ANGLE = 0
+
+# 12
+# MIN_OVER_HOUGH = 50
+# MIN_LENGTH = 63/3
+# MAX_LENGTH = 100000
+# IMAGE_DIMENSION = (800, 400)
+# DASH_INTERVAL_PXL = 119 # the interval + one line length, 0-300 is legal value for window_h=200
+# LINE_LIST = ['CD', 'CS']
+# LINE_INFO = [[(770, 170), 150, 30, 0],
+#              [(770, 210), 150, 30, 0]]
+# LANE_WIDTH = 39 # used for solid line mode
+# INITIAL_ANGLE = 0
+
+# 11
+# MIN_OVER_HOUGH = 50
+# MIN_LENGTH = 60/3
+# MAX_LENGTH = 100000
+# IMAGE_DIMENSION = (800, 400)
+# DASH_INTERVAL_PXL = 90 # the interval + one line length, 0-300 is legal value for window_h=200
+# LINE_LIST = ['CD']
+# LINE_INFO = [[(770, 175), 150, 50, 0]]
+# LANE_WIDTH = 50 # used for solid line mode
+# INITIAL_ANGLE = 0.13
+
+# 10
+# MIN_OVER_HOUGH = 50
+# MIN_LENGTH = 60/3
+# MAX_LENGTH = 100000
+# IMAGE_DIMENSION = (800, 400)
+# DASH_INTERVAL_PXL = 150 # the interval + one line length, 0-300 is legal value for window_h=200
+# LINE_LIST = ['CD', 'CS']
+# LINE_INFO = [[(770, 175), 200, 50, 0],
+#              [(770, 230), 200, 50, 0]]
+# LANE_WIDTH = 50 # used for solid line mode
+# INITIAL_ANGLE = 0
+
+# 9
+# MIN_LENGTH = 60/3
+# MAX_LENGTH = 100000
+# IMAGE_DIMENSION = (800, 400)
+# DASH_INTERVAL_PXL = 150 # the interval + one line length, 0-300 is legal value for window_h=200
+# LINE_LIST = ['CD', 'CS']
+# LINE_INFO = [[(770, 175), 200, 50, 0],
+#              [(770, 245), 200, 30, 0]]
+# LANE_WIDTH = 50 # used for solid line mode
+# INITIAL_ANGLE = 0
+
+# 8
+# MIN_OVER_HOUGH = 50
+# MIN_LENGTH = 60/3
+# MAX_LENGTH = 100000
+# IMAGE_DIMENSION = (800, 400)
+# DASH_INTERVAL_PXL = 90 # the interval + one line length, 0-300 is legal value for window_h=200
+# LINE_LIST = ['CD']
+# LINE_INFO = [[(770, 160), 150, 50, 0]]
+# LANE_WIDTH = 63 # used for solid line mode
+# INITIAL_ANGLE = 0
+
+# 7, 6, 5, 4, 3, 2, 1
+# MIN_OVER_HOUGH = 50
+# MIN_LENGTH = 60/3
+# MAX_LENGTH = 100000
+# IMAGE_DIMENSION = (800, 400)
+# DASH_INTERVAL_PXL = 97 # the interval + one line length, 0-300 is legal value for window_h=200
+# LINE_LIST = ['CS']
+# LINE_INFO = [[(770, 160), 120, 50, 0]]
+# LANE_WIDTH = 63 # used for solid line mode
+# INITIAL_ANGLE = 0
+
+# 0
+# MIN_OVER_HOUGH = 50
+# MIN_LENGTH = 56/3
+# MAX_LENGTH = 56*1.2
+# IMAGE_DIMENSION = (800, 400)
+# DASH_INTERVAL_PXL = 90 # the interval + one line length, 0-300 is legal value for window_h=200
+# LINE_LIST = ['CD']
+# LINE_INFO = [[(770, 170), 150, 50, 0]]
+# LANE_WIDTH = 53 # used for solid line mode
+# INITIAL_ANGLE = 0
+
+# 74
+MIN_OVER_HOUGH = 70
+MIN_LENGTH = 30/3
+MAX_LENGTH = 30/3*5
+IMAGE_DIMENSION = (800, 400)
+DASH_INTERVAL_PXL = 60 # the interval + one line length, 0-300 is legal value for window_h=200
+LINE_LIST = ['CD']
+LINE_INFO = [[(770, 120), 150, 50, 0]]
+LANE_WIDTH = 50 # used for solid line mode
+INITIAL_ANGLE = -0.6283185307179586
