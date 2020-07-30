@@ -9,9 +9,13 @@ from scipy import ndimage
 import scipy.cluster.hierarchy as hcluster
 import random
 import os, shutil
+import time
 
 DEFAULT_LINE_LIST = ['CD']
 DEFAULT_LINE_INFO = [[(770, 170), 150, 50, 0]]
+
+DEFAULT_LINE_LIST = ['CD']
+DEFAULT_LINE_INFO = [[(770, 200), 100, 50, 0]]
 
 class LineDetector:
 
@@ -33,8 +37,9 @@ class LineDetector:
                  dash_interval_pxl = 90,
                  line_list= DEFAULT_LINE_LIST,
                  line_info= DEFAULT_LINE_INFO,
-                 lane_width = 33,
+                 lane_width = 53,
                  initial_angle = 0,
+                 max_turning_angle = [-100, 100],
                  current_image_name = 'um_000000',
                  current_image_path= "../../../../KITTI/data_road/transformed/",
                  vis_folder_prefix = 'visualization/',
@@ -57,6 +62,7 @@ class LineDetector:
         assert len(self.line_info) == len(self.line_list)
         self.step_window= step_window
         self.visualization = visualization
+        self.max_turning_angle = max_turning_angle
 
 
     @staticmethod
@@ -94,6 +100,8 @@ class LineDetector:
 
 
     def detect_and_save(self):
+
+        start_time = time.perf_counter()
 
         vis_folder = self.vis_folder_prefix+str(self.current_image_name)
         self.prepare_visualization_folder(vis_folder=vis_folder)
@@ -303,11 +311,10 @@ class LineDetector:
                                     y_new = reg.predict(xnew_arr.reshape(-1,1))
 
                                 # 4. check the line's validity
-                                diff = (y_new[5] - y_new[15])/10.0
-                                delta_angle = np.arctan2(diff, 1) # in radians
-                                if abs(delta_angle) * 180 / np.pi > 30:
-                                    print("large line angle, continue")
+                                if not self.max_turning_angle[1] >= the_angle * 180 / np.pi >= self.max_turning_angle[0]:
+                                    print("large line angle, continue", the_angle * 180 / np.pi)
                                     continue
+                                print("test: ", abs(the_angle) * 180 / np.pi)
 
                                 # 5. mark pixels on the image before rotation
                                 x_offset = current_mid_end[0] - window_h
@@ -566,6 +573,8 @@ class LineDetector:
             dst = cv2.addWeighted(np.array(img, dtype=np.int32), 0.8, np.array(overlay, dtype=np.int32), 0.2, 0.0)
             cv2.imwrite(os.path.join(vis_folder, 'final_seg_layon.png'),dst)
 
+        end_time = time.perf_counter()
+        print("finished in ", end_time-start_time," seconds")
         # output the mask result
         cv2.imwrite(os.path.join(vis_folder, 'final_seg.png'),copy)
 
@@ -573,5 +582,23 @@ class LineDetector:
 
 if __name__ == "__main__":
 
-    detector = LineDetector(visualization=True)
+    # detector = LineDetector(visualization=True)
+
+    detector = LineDetector(
+        min_length=80/3,
+        max_length=80*1.2,
+        image_dimension=(800, 400),
+        dash_interval_pxl=135,
+        max_turning_angle=[-100, 5],
+        line_list=['CD'],
+        line_info=[[(770, 172), 150, 50, 0]],
+        lane_width=50,
+        initial_angle=0,
+        visualization=True,
+        step_window=False,
+        current_image_name = 'um_000083',
+        current_image_path= "../../../../KITTI/data_road/transformed/",
+        vis_folder_prefix = 'visualization/',
+    )
+
     detector.detect_and_save()

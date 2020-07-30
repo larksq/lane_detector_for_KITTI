@@ -1,3 +1,20 @@
+# 95
+min_over_hough = 50,
+min_length = 50/3,
+max_length = 50*1.2,
+image_dimension = (800, 400),
+dash_interval_pxl = 85,
+line_list= DEFAULT_LINE_LIST,
+line_info= DEFAULT_LINE_INFO,
+lane_width = 40,
+initial_angle = 0.296705972839036,
+max_turning_angle = [-3, 10],
+current_image_name = 'um_000095',
+current_image_path= "../../../../KITTI/data_road/transformed/",
+vis_folder_prefix = 'visualization/',
+step_window= True,
+visualization = True
+
 # 94
 # MIN_OVER_HOUGH = 50
 # MIN_LENGTH = 40
@@ -376,7 +393,7 @@
 # LANE_WIDTH = 65 # used for solid line mode
 # INITIAL_ANGLE = 0
 
-# 27
+# 28
 # MIN_OVER_HOUGH = 50
 # MIN_LENGTH = 30
 # MAX_LENGTH = 10000000
@@ -431,29 +448,19 @@
 # LANE_WIDTH = 60 # used for solid line mode
 # INITIAL_ANGLE = -0.06981317007977318
 
-# 20
-# MIN_OVER_HOUGH = 50
-# MIN_LENGTH = 56/3
-# MAX_LENGTH = 1000000
-# IMAGE_DIMENSION = (800, 400)
-# DASH_INTERVAL_PXL = 92 # the interval + one line length, 0-300 is legal value for window_h=200
-# LINE_LIST = ['CD']
-# LINE_INFO = [[(770, 170), 150, 50, 0]]
-# LANE_WIDTH = 42 # used for solid line mode
-# INITIAL_ANGLE = 0
+# 19, 20
+# min_length=52/3,
+# max_length=1000000,
+# image_dimension=(800, 400),
+# dash_interval_pxl=92,
+# max_turning_angle=[-100, 100],
+# line_list=['CD', 'CS'],
+# line_info=[[(770, 170), 150, 50, 0],
+#            [(770, 225), 150, 30, 0]],
+# lane_width=63,
+# initial_angle=0,
 
-# 19
-# MIN_OVER_HOUGH = 50
-# MIN_LENGTH = 52/3
-# MAX_LENGTH = 1000000
-# IMAGE_DIMENSION = (800, 400)
-# DASH_INTERVAL_PXL = 92 # the interval + one line length, 0-300 is legal value for window_h=200
-# LINE_LIST = ['CD']
-# LINE_INFO = [[(770, 170), 150, 30, 0]]
-# LANE_WIDTH = 38 # used for solid line mode
-# INITIAL_ANGLE = 0
-
-# 18, 17, 16, 15, 14, 13
+# 18, 17, 16, 15, 14
 # MIN_OVER_HOUGH = 50
 # MIN_LENGTH = 63/3
 # MAX_LENGTH = 63*1.2
@@ -463,6 +470,23 @@
 # LINE_INFO = [[(770, 170), 150, 50, 0]]
 # LANE_WIDTH = 63 # used for solid line mode
 # INITIAL_ANGLE = 0
+
+# 13
+# min_length=63/3,
+# max_length=1000000,
+# image_dimension=(800, 400),
+# dash_interval_pxl=119,
+# max_turning_angle=[-15, 15],
+# line_list=['CD', 'CS'],
+# line_info=[[(770, 170), 150, 50, 0],
+#            [(770, 235), 150, 30, 0]],
+# lane_width=63,
+# initial_angle=0,
+# visualization=True,
+# step_window=True,
+# current_image_name = 'um_000013',
+# current_image_path= "../../../../KITTI/data_road/transformed/",
+# vis_folder_prefix = 'visualization/',
 
 # 12
 # MIN_OVER_HOUGH = 50
