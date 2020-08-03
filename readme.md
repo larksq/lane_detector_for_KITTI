@@ -12,7 +12,27 @@ This approach is highly controllable over all complicated cases in the KITTI dat
 
 # How to use
 
-Example
+just run the detector.py, the result will be stored at "visualization/um_xxxxxx". The folder needs to be create before running the script.
+
+## Explain of all parameters
+
+All parameters are robust to a little offset to the real values of the images.
+
+min_over_hough: the minimal threshold for HoG value
+min_length: (only used for dashed lines) the minimal length threshold of each dashed line mark
+max_length: (only used for dashed lines) the maximal length threshold of each dashed line mark
+image_dimension: image dimension in a tuple of (height, width), for KITTI BEV images it is (800, 400)
+dash_interval_pxl: (only used for dashed lines) the distance between two dashed line marks
+line_list: a list of lines in the image, current script only support one or two lines in the list, see the script for more
+line_info: the information about those lines in line_list, see the script for more
+lane_width: used when there is only one left line given (assume right side driving), the width of current lane
+initial_angle: the initial angle of lines in radius
+max_turning_angle: the maximal turning angles for threshold of noise in a list of [minimal, maximal] in angles. Eg. [-100, 100]
+current_image_name: used for image reading, eg, 'um_000000'. If you want to read and save your own non-KITTI image, you will need to re-write the read and write function
+current_image_path: the image pre-fix for image storing location
+vis_folder_prefix: the folder where visualization images are stored
+step_window: if this is true, then the script will pause for an input after detection in each window. This gives a chance for step by step debug
+visualization: if this is true, then detailed visualization will be stored
 
 
 # More details
@@ -31,4 +51,8 @@ The predesigned classes are:
 ## Where does the line start from?
 given an approximated starting point in the image
 
+
+
+
+The paper is currently under-written, if you have any question, feel free to contact me.
 
