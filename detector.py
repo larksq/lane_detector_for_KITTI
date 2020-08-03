@@ -14,9 +14,6 @@ import time
 DEFAULT_LINE_LIST = ['CD']
 DEFAULT_LINE_INFO = [[(770, 170), 150, 50, 0]]
 
-DEFAULT_LINE_LIST = ['CD']
-DEFAULT_LINE_INFO = [[(770, 200), 100, 50, 0]]
-
 class LineDetector:
 
     # the list of current lines information at the starting point
@@ -582,23 +579,25 @@ class LineDetector:
 
 if __name__ == "__main__":
 
-    # detector = LineDetector(visualization=True)
+    detector = LineDetector(visualization=True)
 
-    detector = LineDetector(
-        min_length=80/3,
-        max_length=80*1.2,
-        image_dimension=(800, 400),
-        dash_interval_pxl=135,
-        max_turning_angle=[-100, 5],
-        line_list=['CD'],
-        line_info=[[(770, 172), 150, 50, 0]],
-        lane_width=50,
-        initial_angle=0,
-        visualization=True,
-        step_window=False,
-        current_image_name = 'um_000083',
-        current_image_path= "../../../../KITTI/data_road/transformed/",
-        vis_folder_prefix = 'visualization/',
-    )
+    # Example of how to use on customized data
+
+    # detector = LineDetector(
+    #     min_length=80/3,
+    #     max_length=80*1.2,
+    #     image_dimension=(800, 400),
+    #     dash_interval_pxl=135,
+    #     max_turning_angle=[-100, 5],
+    #     line_list=['CD'],
+    #     line_info=[[(770, 172), 150, 50, 0]],
+    #     lane_width=50,
+    #     initial_angle=0,
+    #     visualization=True,
+    #     step_window=False,
+    #     current_image_name = 'um_000083',
+    #     current_image_path= "../../../../KITTI/data_road/transformed/",
+    #     vis_folder_prefix = 'visualization/',
+    # )
 
     detector.detect_and_save()
