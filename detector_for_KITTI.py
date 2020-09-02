@@ -582,7 +582,7 @@ if __name__ == "__main__":
     detector = LineDetector(visualization=True)
 
     # Example of how to use on customized data
-
+    #
     # detector = LineDetector(
     #     min_length=80/3,
     #     max_length=80*1.2,
@@ -599,5 +599,25 @@ if __name__ == "__main__":
     #     current_image_path= "../../../../KITTI/data_road/transformed/",
     #     vis_folder_prefix = 'visualization/',
     # )
+
+    # Example of how to use customized data from Citiscape
+    #
+    detector = LineDetector(
+        min_length=53/3,
+        max_length=53*1.2,
+        image_dimension=(1024, 1024),
+        dash_interval_pxl=63,
+        max_turning_angle=[-20, 20],
+        line_list=['CD', 'CD'],
+        line_info=[[(942, 451), 80, 50, 0],
+                   [(952, 664), 80, 50, 0]],
+        lane_width=104,
+        initial_angle=0,
+        visualization=True,
+        step_window=False,
+        current_image_name = 'bochum_000000_020673_BEV',
+        current_image_path= "../../images/cityscapes/normal/transformed/",
+        vis_folder_prefix = 'visualization/',
+    )
 
     detector.detect_and_save()

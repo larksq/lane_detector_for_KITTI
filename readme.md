@@ -1,4 +1,4 @@
-# What is this for?
+#### What is this for?
 
 This rep will detect ego lane of current BEV(bird eye view) image following the convention of the KITTI UM-LANE challenge. 
 
@@ -12,7 +12,7 @@ This approach is highly controllable over all complicated cases in the KITTI dat
 
 # How to use
 
-just run the detector.py, the result will be stored at "visualization/um_xxxxxx". The folder needs to be create before running the script.
+just run the detector.py, change the current_image_path to the path where your images stored and change vis_folder_prefix to the path where you want the visualization images to be stored. The result will be stored at "visualization/um_xxxxxx". The folder needs to be created before running the script.
 
 ## Explain of all parameters
 
@@ -41,8 +41,8 @@ Here is the full flow chart of the detection method.
 ![Flow Chart](readme_images/flow_chart.png)
 This approach is based on the prior knowledge of:
 
-## What is the lines? 
-The predesigned classes are: 
+## What is the lines types? 
+The predesigned types are: 
 - SS = Straight Solid line
 - CD = Curved Dashed line
 - CS = Curved Solid line
@@ -55,4 +55,7 @@ given an approximated starting point in the image
 
 
 The paper is currently under-written, if you have any question, feel free to contact me.
+
+
+
 
