@@ -53,9 +53,6 @@ given an approximated starting point in the image
 
 
 
-
-The paper is currently under-written, if you have any question, feel free to contact me.
-
-
+See this paper "[A perception centred self-driving system without HD Maps](https://arxiv.org/abs/2009.00782)" for more discussion.
 
 
